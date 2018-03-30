@@ -368,7 +368,7 @@ API Reference
 
 **The latest API Refrence docs are hosted in the docker container, and you can browse them at:**
 
-http://localhost:8080/docs/
+http://localhost:8080/docs/#api-reference
 
 FAQ
 ===
