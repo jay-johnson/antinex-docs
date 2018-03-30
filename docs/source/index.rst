@@ -147,7 +147,7 @@ Get the New Prediction Records and Results
     ai-get-results.py -u root -p 123321 -i 2
 
 API Examples
-------------
+============
 
 .. toctree::
    :maxdepth: 2
