@@ -86,14 +86,25 @@ pygments_style = 'sphinx'
 # find more themes: https://bootswatch.com/
 html_theme = os.getenv(
     "DOC_THEME",
-    "alabaster")
+    "sphinx_rtd_theme")
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
 html_theme_path = []
-html_theme_options = {}
+html_theme_options = {
+    'canonical_url': '',
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    # Toc options
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4
+}
+
+# Add any paths that contain custom static files (such as style sheets) here,
 
 # if using bootstrap add on the theme
 if html_theme == "bootstrap":
@@ -101,6 +112,16 @@ if html_theme == "bootstrap":
     # Theme options are theme-specific and customize the look and feel of a
     # theme further.
     html_theme_options = {
+
+        # https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
+        'canonical_url': '',
+        'logo_only': False,
+        'display_version': True,
+        'prev_next_buttons_location': 'bottom',
+        # Toc options
+        'collapse_navigation': False,
+        'sticky_navigation': True,
+        'navigation_depth': 4,
 
         # Navigation bar title. (Default: ``project`` value)
         'navbar_title': "AntiNex",
